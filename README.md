@@ -6,17 +6,17 @@ It is a deep-dive into the internal mechanics of the Transformer model, as origi
 The project is divided into three major architectural milestones:
 
 - The Encoder: 
-               Implementation of Multi-Head Self-Attention and Feed-Forward Sublayers.
-               Features Positional Encoding to help the model understand word order and sequence structure.
-               Includes a classification head for tasks like sentiment analysis.
+               - Implementation of Multi-Head Self-Attention and Feed-Forward Sublayers.
+               - Features Positional Encoding to help the model understand word order and sequence structure.
+               - Includes a classification head for tasks like sentiment analysis.
 
 - The Decoder: 
-               Implementation of Causal (Masked) Self-Attention to prevent the model from "cheating" by looking at future tokens during training.
-               Construction of the decoder body to project internal states into vocabulary-sized probabilities.
+               - Implementation of Causal (Masked) Self-Attention to prevent the model from "cheating" by looking at future tokens during training.
+               - Construction of the decoder body to project internal states into vocabulary-sized probabilities.
 
 - The Full Encoder-Decoder Bridge:
-               Creation of the Cross-Attention mechanism, which allows the decoder to "look back" at the encoder's output.
-               Integration of all modules into a single Transformer class capable of handling full sequence-to-sequence tasks.
+               - Creation of the Cross-Attention mechanism, which allows the decoder to "look back" at the encoder's output.
+               - Integration of all modules into a single Transformer class capable of handling full sequence-to-sequence tasks.
 
 ## Project Highlights
 - **Modular Design:** Every component (Multi-Head Attention, Positional Encoding, Feed-Forward layers) is built as a standalone PyTorch module.
